@@ -2,6 +2,7 @@ describe('webdriveruniwersity - contact page', () => {
     beforeEach(async () => {
         await browser.maximizeWindow();
         await browser.url('/Contact-Us/contactus.html');
+        console.log(`>>Browser Object: ${JSON.stringify(browser)}`)
     });
     
     it('valid submiision -submit all information',async () => {
